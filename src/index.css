@@ -7,12 +7,20 @@
   --success: #52CA76;
   --warning: #F6AA1C;
   /* grayscale */
-  --dark-gray: #1F1F1F;
-  --dark-gray-2: #474747;
-  --dark-gray-3: #666666;
-  --light-gray: #8F8F8F;
-  --light-gray-2: #CCCCCC;
-  --light-gray-3: #F5F5F5;
+  --dark-grey: #1F1F1F;
+  --dark-grey-2: #474747;
+  --dark-grey-3: #666666;
+  --light-grey: #8F8F8F;
+  --light-grey-2: #CCCCCC;
+  --light-grey-3: #F5F5F5;
   --white: #FFFFFF;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}

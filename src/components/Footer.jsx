@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import InformationFooter from "./InformationFooter";
 
 const FooterContainer = styled.footer`
-  width: 100vw;
+  width: 100%;
   background-color: var(--dark-grey);
   color: var(--white);
   font-size: 1rem;

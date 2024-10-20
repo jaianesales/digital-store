@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import right24px from "../assets/right24px.svg";
 
+const StyledBg = styled.div`
+  width: 100%;
+`;
+
 const StyledSection = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -26,9 +30,10 @@ const StyledSection = styled.div`
   }
 `;
 
-function Section({ title, titleAlign = "start", link, children }) {
+function Section({ title, titleAlign = "start", color = "#ffffff", link, children }) {
   return (
-    <StyledSection>
+    <StyledBg style={{ background: color }}>
+      <StyledSection>
       <div style={{ justifyContent: titleAlign }}>
         <h2 >{title}</h2>
 
@@ -42,7 +47,8 @@ function Section({ title, titleAlign = "start", link, children }) {
         )}
       </div>
       { children }
-    </StyledSection>
+      </StyledSection>
+    </StyledBg>
   );
 }
 

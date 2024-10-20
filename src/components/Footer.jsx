@@ -12,11 +12,6 @@ const FooterContainer = styled.footer`
   color: var(--white);
   font-size: 1rem;
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
   #footer-geral {
     display: grid;
     grid-template-columns: 5fr 7fr;

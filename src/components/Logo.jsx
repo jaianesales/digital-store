@@ -4,7 +4,7 @@ function Logo({ className }) {
     return (
         <>
             <div>
-                <img className = {className} src={ logo } alt="logo" />
+                <img className={ className } src={ logo } alt="logo" />
             </div>
         </>
     );

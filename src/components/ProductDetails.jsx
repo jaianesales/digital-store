@@ -1,5 +1,5 @@
 function ProductDetails() {
-    return (  
+    return (
         <>
         </>
     );

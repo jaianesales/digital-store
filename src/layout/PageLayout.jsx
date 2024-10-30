@@ -3,13 +3,13 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function PageLayout() {
-    return ( 
-        <>
-            <Header />
-            <Outlet />
-            <Footer />
-        </>
-     );
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
 }
 
-export default PageLayout
+export default PageLayout;

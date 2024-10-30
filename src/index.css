@@ -6,7 +6,8 @@
   --error: #EE4266;
   --success: #52CA76;
   --warning: #F6AA1C;
-  /* grayscale */
+
+  /* greyscale */
   --dark-grey: #1F1F1F;
   --dark-grey-2: #474747;
   --dark-grey-3: #666666;
@@ -28,4 +29,5 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
 }

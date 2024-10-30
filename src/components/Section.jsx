@@ -9,9 +9,9 @@ const StyledBg = styled.div`
 const StyledSection = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  /* padding: 60px 0; */
 
-  div {
+  .title {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -30,23 +30,30 @@ const StyledSection = styled.div`
   }
 `;
 
-function Section({ title, titleAlign = "start", color = "#ffffff", link, children }) {
+function Section({
+  title,
+  titleAlign = "start",
+  color = "#FFFFFF",
+  link,
+  children,
+  padd="60px 0"
+}) {
   return (
-    <StyledBg style={{ background: color }}>
+    <StyledBg style={{ background: color, padding: padd }}>
       <StyledSection>
-      <div style={{ justifyContent: titleAlign }}>
-        <h2 >{title}</h2>
+        <div className="title" style={{ justifyContent: titleAlign }}>
+          <h2>{title}</h2>
 
-        {link && (
-          <Link to={link}>
-            <span>
-              Ver todos
-              <img src={right24px} />
-            </span>
-          </Link>
-        )}
-      </div>
-      { children }
+          {link && (
+            <Link to={link}>
+              <span>
+                Ver todos
+                <img src={right24px} />
+              </span>
+            </Link>
+          )}
+        </div>
+        {children}
       </StyledSection>
     </StyledBg>
   );

@@ -10,9 +10,8 @@ import camisetas from "../assets/camisetas.svg";
 import headphones from "../assets/headphones.svg";
 import tenis from "../assets/tenis.svg";
 import airJordan from "../assets/airJordan.png";
-import ProductCard from "../components/ProductCard";
-
-import tenisv8 from "../../public/tenisv8.png"
+import ProductListing from "../components/ProductListing";
+import Gallery from "../components/Gallery";
 
 const StyledImgColecao = styled.div`
   display: grid;
@@ -139,9 +138,66 @@ const StyledOferta = styled.div`
   }
 `;
 
+const produtos = [
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: "../../public/tenisv8.png",
+    category: "Tênis",
+    price: 200,
+  },
+];
+
 function HomePage() {
   return (
     <>
+      <Gallery />
       <Section title={"Coleções em destaque"} color={"#F5F5F5"}>
         <StyledImgColecao>
           <div>
@@ -218,8 +274,7 @@ function HomePage() {
         link={"/productlisting"}
         color={"#F5F5F5"}
       >
-        <ProductCard image={tenisv8} category={'Tênis'} name={'Tênis v8'} price={100} />
-        <ProductCard image={tenisv8} category={'Teste'} name={'Tênis v8 teste 2'} price={200} priceDiscount={100} />
+        <ProductListing className="container" produtos={produtos} />
       </Section>
       <Section>
         <StyledOferta>

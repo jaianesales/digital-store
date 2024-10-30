@@ -1,8 +1,8 @@
-function ProductOptions () {
-    return ( 
+function ProductOptions() {
+    return (
         <>
         </>
-     );
+    );
 }
 
-export default ProductOptions ;
+export default ProductOptions;

@@ -1,9 +1,11 @@
+
+
 function NotFound() {
-    return ( 
+    return (
         <>
-            <h1>Not Found</h1>
+        <h1>Página não encontrada</h1>
         </>
-     );
+    );
 }
 
 export default NotFound;

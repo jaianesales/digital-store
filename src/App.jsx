@@ -1,11 +1,11 @@
 import Paths from "./routes/Paths";
 
 function App() {
-  return ( 
+  return (
     <>
       <Paths />
     </>
-   );
+  );
 }
 
 export default App;

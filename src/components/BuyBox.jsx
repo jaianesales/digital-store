@@ -1,8 +1,8 @@
 function BuyBox() {
-    return ( 
+    return (
         <>
         </>
-     );
+    );
 }
 
 export default BuyBox;

@@ -9,7 +9,6 @@ const StyledBg = styled.div`
 const StyledSection = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 60px 0; */
 
   .title {
     width: 100%;
@@ -17,7 +16,7 @@ const StyledSection = styled.div`
     justify-content: space-between;
 
     & h2 {
-      color: var(--dark-grey2);
+      color: var(--dark-grey-2);
       font-size: 1.5rem;
       margin-bottom: 40px;
     }
